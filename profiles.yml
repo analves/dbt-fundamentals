@@ -1,0 +1,12 @@
+default:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: dbt2025-470203
+      dataset: dbt_aalves
+      keyfile: C:\Users\anton\dbt_projects\gcp-key.json
+      threads: 4
+      timeout_seconds: 300
+      location: US
